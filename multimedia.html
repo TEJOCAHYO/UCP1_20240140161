@@ -124,6 +124,7 @@
       <h1 class="display-5 fw-semibold">Multimedia Tech Community</h1>
       <p class="lead">Nikmati tampilan visual dan audio yang memperkenalkan suasana komunitas kami dalam bentuk yang menarik.</p>
     </section>
+    
 
     <section class="row g-4 mb-5">
       <div class="col-lg-4">
@@ -133,3 +134,44 @@
             <h5 class="card-title">Diskusi Kreatif</h5>
             <p class="card-text">Anggota saling berdiskusi ide proyek, workshop, dan event yang dapat menginspirasi.</p>
           </div>    
+
+          div class="modal-overlay" id="modal-media">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>My Media Collection</h3>
+                <button class="close-btn" onclick="closeModal('media')">&times;</button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="section-title">Music & Audio</div>
+                <div class="media-container">
+                    <p style="font-size: 0.8rem; font-weight: 700;">Favorite Track 01</p>
+                    <audio controls>
+                        <source src="Joji -  Glimpse of Us.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="media-container">
+                    <p style="font-size: 0.8rem; font-weight: 700;">Favorite Track 02</p>
+                    <audio controls>
+                        <source src="media/musik2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="section-title">Videos</div>
+                <div class="media-container">
+                    <video controls>
+                        <source src="copy_9C91FCAF-DD31-4141-AF60-53D276D2904B - Copy.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="section-title">Gallery</div>
+                <div class="photo-grid">
+                    <img src="IMG_3266 - Copy.jpg" alt="Gallery 1">
+                    <img src="media/foto2.jpg" alt="Gallery 2">
+                    <img src="media/foto3.jpg" alt="Gallery 3">
+                    <img src="media/foto4.jpg" alt="Gallery 4">
+                </div>
+
+            </div>
+        </div>
+    </div>

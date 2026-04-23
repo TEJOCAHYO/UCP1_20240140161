@@ -1,0 +1,55 @@
+body {
+  background-color: var(--warm-white);
+}
+
+.page-header {
+  margin-bottom: 2.5rem;
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--stone-dark);
+  margin: 0.4rem 0 0;
+  line-height: 1.1;
+}
+
+.page-title em {
+  color: var(--sage-dark);
+  font-style: italic;
+}
+
+.page-desc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  max-width: 500px;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.success-toast {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(90, 122, 92, 0.1);
+  border: 1px solid rgba(90, 122, 92, 0.25);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.88rem;
+  color: var(--sage-dark);
+  transition: opacity 0.5s ease;
+}
+
+.success-toast span {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+  <main>
+    <div class="section">
+      <a href="index.html" class="btn btn-back fade-up fade-up-d1">← Kembali ke Beranda</a>
+
+      <div class="page-header fade-up fade-up-d2">
+        <span class="leaf-deco">🌿</span>
+        <h1 class="page-title">Formulir <em>Biodata</em></h1>
+        <div class="divider"></div>
+        <p class="page-desc">Lengkapi data diri Anda dengan tenang dan penuh perhatian.</p>
+      </div>
+
+      <form action="#" onsubmit="handleSubmit(event)">
+        <fieldset class="fade-up fade-up-d3">
+          <legend>Data Pribadi</legend>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Nama lengkap Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="tempat_lahir">Tempat Lahir</label>
+              <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Kota kelahiran" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nim">NIM</label>
+              <input type="text" id="nim" name="nim" placeholder="Nomor Induk Mahasiswa" />
+            </div>
+            <div class="form-group">
+              <label for="alamat">Alamat</label>
+              <input type="text" id="alamat" name="alamat" placeholder="Alamat tempat tinggal" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" placeholder="••••••••" />
+          </div>
+
+          <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="laki" name="jk" value="laki-laki" checked />
+                <label for="laki">Laki-laki</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="perempuan" name="jk" value="perempuan" />
+                <label for="perempuan">Perempuan</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+          <div class="form-group">
+            <label for="kota">Kota Asal</label>
+            <select id="kota" name="kota">
+              <option value="">— Pilih kota —</option>
+              <option value="yogyakarta">Yogyakarta</option>
+              <option value="semarang">Semarang</option>
+              <option value="bandung">Bandung</option>
+              <option value="jakarta">Jakarta</option>
+              <option value="surabaya">Surabaya</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Apa yang Membuat Anda Harus Kami Pilih?</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis jawaban Anda di sini…"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-actions fade-up fade-up-d4">
+          <button type="submit" class="btn btn-primary">Kirim Data ✦</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+      </form>
+
+      <div id="success-msg" style="display:none;" class="success-toast">
+        <span>🌿</span>
+        <p>Data berhasil dikirimkan. Terima kasih!</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>✦ Tech Community &amp; Links</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('success-msg');
+      msg.style.display = 'flex';
+      setTimeout(() => { msg.style.opacity = '0'; }, 3500);
+      setTimeout(() => { msg.style.display = 'none'; msg.style.opacity = '1'; }, 4000);
+    }
+  </script>
+</body>
+</html>
